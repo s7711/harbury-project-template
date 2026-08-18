@@ -1,0 +1,5 @@
+# Keep shell scripts and SQL LF even on Windows checkouts — Git for Windows
+# defaults to CRLF conversion, and bash cannot run CRLF scripts.
+* text=auto
+*.sh text eol=lf
+*.sql text eol=lf

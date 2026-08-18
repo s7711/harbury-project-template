@@ -1,0 +1,9 @@
+{
+  "name": "Harbury Club Project",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "postCreateCommand": "npm install",
+  "forwardPorts": [8787],
+  "portsAttributes": {
+    "8787": { "label": "wrangler dev" }
+  }
+}

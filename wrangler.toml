@@ -1,0 +1,22 @@
+# Cloudflare Workers config for a Harbury Builders Club project.
+#
+# The one-click Deploy button and the advanced setup.sh both fill in the
+# database details below automatically. Setting up by hand instead? Rename
+# `name` to your own project (keep the `harbury-` prefix) and paste your D1
+# `database_id` after creating the database — see the README.
+
+name = "harbury-project-template"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# Static front-end (everything in ./public is served automatically).
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+# D1 database binding. `database_id` is blank in the template — create your
+# database first (dashboard or `wrangler d1 create`), then paste the id here.
+[[d1_databases]]
+binding = "DB"
+database_name = "harbury-project-template-db"
+database_id = "046a3017-0ad4-4a09-9a49-6ff53d1f4e33"
